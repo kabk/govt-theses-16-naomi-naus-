@@ -335,6 +335,7 @@ a.footnote-ref {
 
 .nav-label {
 	cursor: pointer;
-	padding: 1.5%;
+	width: 10px;
+	postion: absolute;
 
 }
