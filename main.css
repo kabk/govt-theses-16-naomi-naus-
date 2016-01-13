@@ -149,7 +149,7 @@ progress::-moz-progress-bar{background-color:transparent}
     position: relative;
     font: 18px Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
-    line-height: 25px;
+    line-height: 28px;
     margin: 0 auto 100px auto;
     text-indent: 13%;
 }
@@ -299,65 +299,30 @@ a.footnote-ref {
     z-index: 60;
 }
 
-.left-side {
-    left: 0%;
-}
-
-.side-nav {
-    width: 1%;
-    height: 100%;
-    position: fixed;
-    top: 0%;
-    display: block;
-    background: none;
-    -webkit-transition: background 0.18s ease;
-    -moz-transition: background 0.18s ease;
-    -o-transition: background 0.18s ease;
-    -ms-transition: background 0.18s ease;
-    transition: background 0.18s ease;
-    z-index: 400;
-}
 
 .reading {
     margin-bottom: 10px;
 }
 
-.nav {
-	margin: 10;
-	padding: 0;
-	list-style-type: none;
-	background-color:#ffffff;
-	display: none;
-	position: absolute;
-	width: 19em;
+.menu {
+    font-family: 'Helvetica', sans-serif;
+        font-color: #b0b2b4;
+    position: fixed;
+    top: 45px;
+    left: 15px;
+    text-align: left;
+    width: 150px;
+    font-size: 10px;
+    line-height: 10pt;
+    letter-spacing: 0.04em;
+    padding-left: 15px;
 }
 
-.nav a {
-	display: block;
-	padding: 0.5em;
-	text-decoration: none;
-	color: #000;
-}
+.menu a:hover { 
+    color: #0600ff;}
 
-.nav a:hover {
-	text-decoration: blink;
-	color: #0054ff;
-}
-
-.nav-check {
-	position: absolute;
-	top: -3em;
-}
-
-.nav-check:checked ~ .nav {
-	display: block;
-}
-
-.nav-label {
-	cursor: pointer;
-	width: 10px;
-	postion: absolute;
-
+.menu a:active {
+    color: #ff0185;
 }
 
 @media print {
