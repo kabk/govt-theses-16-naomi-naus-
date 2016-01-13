@@ -377,7 +377,11 @@ a .footnote-ref {
 }
 
 .article-heading .gif{
-    width: 300px;
+    position: absolute;
+    left: -100px;
+    top: 130px;
+    z-index: -1;
+    width: 250px;
 }
 
 @media print {
