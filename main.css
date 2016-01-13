@@ -205,6 +205,7 @@ progress::-moz-progress-bar{background-color:transparent}
 
 .article-subtitle {
     font: 18px "Times New Roman",serif;
+    text-transform: uppercase;
     padding: 30px;
     letter-spacing: 1px;
     text-align: left;
@@ -380,6 +381,11 @@ a .footnote-ref {
     .article-heading{
         width: 600px;
         left: 0%;
+    }
+
+    .article-title{
+        font-size: 40pt;
+        text-indent: 30%;
     }
 
     .article-body{
