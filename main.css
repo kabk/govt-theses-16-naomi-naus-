@@ -307,10 +307,10 @@ a.footnote-ref {
 .menu {
     font-family: 'Helvetica', sans-serif;
     position: fixed;
-    top: 45px;
+    top: 50px;
     left: 15px;
     text-align: left;
-    width: 150px;
+    width: 180px;
     font-size: 10px;
     line-height: 10pt;
     letter-spacing: 0.04em;
@@ -349,8 +349,8 @@ a.footnote-ref {
     display: inline-block;
 }
 
-.nav-label open,
-.nav-close{
+.nav-open,
+.nav-close {
     display: block;
     width: 100%;
 }
@@ -359,13 +359,15 @@ a.footnote-ref {
     display: block;
 }
 
+.nav-check:checked ~ .nav-label .nav-close {
+    display: block;
+}
+
 .nav-check:checked ~ .nav-label .nav-open {
     display: none;
 }
 
-.nav-check:checked ~ .nav-label .nav-close {
-    display: block;
-}
+
 
 @media print {
 
