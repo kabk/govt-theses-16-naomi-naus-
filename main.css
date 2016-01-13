@@ -402,6 +402,10 @@ a .footnote-ref {
         display: none;
     }
 
+    .article-footnote-side{
+        display: none;
+    }
+
     img {
     max-width: 615px;
     }
