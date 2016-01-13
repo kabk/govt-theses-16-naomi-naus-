@@ -53,6 +53,10 @@ body {
 
 html a {
     color: #003;
+    text-decoration: none;
+}
+
+.article-summary a {
     text-decoration: underline;
 }
 
@@ -195,12 +199,28 @@ progress::-moz-progress-bar{background-color:transparent}
     display: inline-block;
     padding: 0;
     letter-spacing: -1px;
-    text-indent: 40%;
+    text-indent: 45%;
     font: 62px Helvetica,Arial,sans-serif;
+}
+
+.article-subtitle {
+    font: 18px 'Perpetua',"Times New Roman",serif;
+    padding: 30px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-indent: -4%;
 }
 
 .article-body ol {
     list-style-type: decimal;
+}
+
+.article-body blockquote {
+    margin-left: 13%;
+    margin-bottom: 30px;
+    font: 15px 'Perpetua',"Times New Roman",serif;
+    letter-spacing: 1px;
+    line-height: 20px;
 }
 
 .article-footnote-side .footnote-number {
@@ -338,4 +358,20 @@ a.footnote-ref {
 	width: 10px;
 	postion: absolute;
 
+}
+
+@media print {
+
+    nav {
+        display:;
+    }
+
+}
+
+blockquote {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 40px;
+    -webkit-margin-end: 40px;
 }
