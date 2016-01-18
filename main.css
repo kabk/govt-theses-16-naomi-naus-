@@ -9,6 +9,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-size: 100%;
     vertical-align: baseline;
 }
+
 body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -91,11 +92,11 @@ progress {
     appearance: none;
     border: none;
     background-color: transparent;
-    color: #ffd201;
+    color: #0042ff;
 }
 
 progress::-webkit-progress-bar{background-color:transparent}
-progress::-webkit-progress-value{background-color:#ffd201}
+progress::-webkit-progress-value{background-color:#0042ff}
 progress::-moz-progress-bar{background-color:transparent}
 }
 
@@ -151,7 +152,7 @@ progress::-moz-progress-bar{background-color:transparent}
     -webkit-font-smoothing: antialiased;
     line-height: 28px;
     margin: 0 auto 100px auto;
-    text-indent: 13%;
+    text-indent: 6%;
 }
 
 .article-body sup {
@@ -188,10 +189,10 @@ progress::-moz-progress-bar{background-color:transparent}
 }
 
 .article-author {
-    font: 54px "Times New Roman",serif;
+    font: 74px "Times New Roman",serif;
     margin: 0;
     line-height: 60px;
-    text-indent: 0%;
+    text-indent: 7%;
     position: relative;
 }
 
@@ -199,8 +200,8 @@ progress::-moz-progress-bar{background-color:transparent}
     display: inline-block;
     padding: 0;
     letter-spacing: -1px;
-    text-indent: 45%;
-    font: 62px Helvetica,Arial,sans-serif;
+    text-indent: 7%;
+    font: 82px Helvetica,Arial,sans-serif;
 }
 
 .article-subtitle {
@@ -275,7 +276,8 @@ progress::-moz-progress-bar{background-color:transparent}
     display: none;
 }
 
-a .footnote-ref {
+a .footnote-ref{
+    line-height: 2px;
 }
 
 .article-summary.article-loaded {
@@ -316,7 +318,7 @@ a .footnote-ref {
 .menu {
     font-family: 'Helvetica', sans-serif;
     position: fixed;
-    top: 50px;
+    top: 20px;
     left: 15px;
     text-align: left;
     width: 180px;
@@ -339,7 +341,7 @@ a .footnote-ref {
     font-size: 10px;
     line-height: 10pt;
     letter-spacing: 0.04em;
-    padding-left: 15px;
+    padding-left: 25px;
     display: none;
 }
 
@@ -347,6 +349,7 @@ a .footnote-ref {
     position: absolute;
     top: -10em;
 }
+
 
 .nav-check:checked ~ .nav {
     display: block;
@@ -365,15 +368,15 @@ a .footnote-ref {
 }
 
 .nav-close {
-    display: block;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-    display: block;
+    display: none;
 }
 
 .nav-check:checked ~ .nav-label .nav-open {
     display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+    display: block;
 }
 
 .article-heading .gif{
