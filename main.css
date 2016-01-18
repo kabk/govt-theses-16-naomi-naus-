@@ -92,11 +92,11 @@ progress {
     appearance: none;
     border: none;
     background-color: transparent;
-    color: #0042ff;
+    color: #ff0084;
 }
 
 progress::-webkit-progress-bar{background-color:transparent}
-progress::-webkit-progress-value{background-color:#0042ff}
+progress::-webkit-progress-value{background-color:#ff0084}
 progress::-moz-progress-bar{background-color:transparent}
 }
 
