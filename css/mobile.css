@@ -52,12 +52,12 @@ ul.a {list-style-type: circle;}
 
 .hsContainer {
 	width: 100%;
-	position: relative;
 }
 
 .hsContent {
-	max-width: 100%;
+	max-width: 350px;
 	position: absolute;
+	padding: 10px 10px 10px 10px;
 }
 	.hsContent h1  {
 		color: #000000;
@@ -77,6 +77,13 @@ ul.a {list-style-type: circle;}
 		color: #000000;
 		text-decoration: underline;
 	}
+	.hsContent h2  {
+		color: #000000;
+		padding: 10px 10px;
+		margin-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+	}
 
 /* ==========================================================================
    Navigatie
@@ -94,35 +101,83 @@ ul.a {list-style-type: circle;}
 
 
 #menubar ul {
+	display: inline-block;
     list-style-type: none;
-    position: fixed;
-    right: 83px;
     margin: 0;
-    padding: 0px 0px 0px 0px;
+    padding: 5px 10px 10px 10px;
 }
 
 #menubar li{
-    list-style-type: none;
-    padding: 8px;
+	display: inline-block;
+    padding: 8px 8px;
     font-size: 10px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
+.nav{
+    font-family: 'Helvetica', sans-serif;
+    text-align: left;
+    font-size: 10px;
+    line-height: 10pt;
+    letter-spacing: 0.04em;
+    padding-left: 25px;
+    display: none;
+}
+
+.nav-check{
+    position: absolute;
+    top: -10em;
+}
+
+
+.nav-check:checked ~ .nav {
+    display: block;
+}
+
+.nav-label {
+    cursor: pointer;
+    width: 20px;
+    display: inline-block;
+}
+
+.nav-open,
+.nav-close {
+    display: block;
+    width: 100%;
+}
+
+.nav-close {
+    display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+    display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+    display: block;
+}
 /* ==========================================================================
    Lay-out
    ========================================================================== */
 
-#hsContent .title{
-
+.title{
+	font: 25px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 55px;
 }
 
-#hsContent .sub-title{
-	
+.sub-title{
+	font: 20px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 28px;
 }
 
-#hsContent .inner{
-	
+.inner{
+	font: 14px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 22px;
 }
 
 /* ==========================================================================
