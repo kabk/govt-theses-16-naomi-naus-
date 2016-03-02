@@ -44,7 +44,7 @@
 	    // Resize our slides
 	    $slide.height(winH);
 	    
-	    // Refresh Skrollr after resizing our sectionsa
+	    // Refresh Skrollr after resizing our sections
 	    
 	    
 	}
