@@ -22,7 +22,7 @@
 			  $body.removeClass('loading').addClass('loaded');
 			  
 		}, 800);
-	});
+	);
 	
 	function adjustWindow(){
 		
