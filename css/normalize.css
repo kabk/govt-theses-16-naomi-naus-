@@ -270,6 +270,7 @@ sup {
     line-height: 0;
     position: relative;
     vertical-align: baseline;
+    padding: 1px;
 }
 
 sup {
@@ -292,7 +293,7 @@ dl,
 menu,
 ol,
 ul {
-    margin: 1em 0;
+    margin: 1em 2em 0 -1em;
 }
 
 dd {
@@ -306,7 +307,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 30px;
 }
 
 /**

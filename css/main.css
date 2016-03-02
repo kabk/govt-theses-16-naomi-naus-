@@ -175,29 +175,118 @@ main {
 	.hsContent h1  {
 		color: #000000;
 		padding: 10px 10px;
-		margin-bottom: 12px;
+		margin-bottom: 15px;
 	}
 	.hsContent p {
 		color: #000000;
         padding: 10px 10px;
-        margin-bottom: 12px;
+        margin-bottom: 0px;
 	}
+    .hsContent p + p {
+        text-indent: 1.5em;
+        margin-top: 20px; 
+    }
 	.hsContent a {
 		color: #000000;
 		text-decoration: underline;
 	}
 
-/* Slide 1 */
+/* ==========================================================================
+   Footnotes
+   ========================================================================== */
+
+.footnote-ref {
+    color: #000000;
+}
+
+.footnotes {
+    height: auto;
+    margin-top: 50px;
+}
+
+.footnotes ol {
+    text-transform: uppercase;
+}  
+
+.note {
+    font: 10px "Arimo", sans-serif;
+    font-weight: bold;
+}
+
+.footnotes hr {
+    display: none;
+}
+
+/* ==========================================================================
+   Navigatie / Scroll
+   ========================================================================== */
+
+#menubar {
+    left: 0px;
+    position: fixed;
+    top: 0;
+    height: 45px;
+    z-index: 70;
+    width: 100%;
+    padding: 20;
+    background: #008aff;
+}
+
+
+#menubar ul {
+    list-style-type: none;
+    position: fixed;
+    right: 83px;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+#menubar li{
+    float: right;
+    list-style-type: none;
+    padding: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   Slide 1
+   ========================================================================== */
 #slide-1 .bcg {background-color: #ffffff}
 #slide-1 .hsContent {
-	top: auto;
+    top: 45px;
     font: 16px "Arimo", sans-serif;
     line-height: 30px;
     font-weight: normal;
     margin: 2%;
 }
 
-/* Slide 2 */
+
+    #slide-1 .title {
+        color: #000000;
+        width: 600px;
+        height: auto;
+        position: relative;
+        top: 23%;
+        left: 20px;
+        font: 100px "Arimo", sans-serif;
+        line-height: 105px;
+    }
+
+    #slide-1 .title h2{
+        font: 16px "Arimo", sans-serif;
+        line-height: 20px;
+        font-weight: normal;
+        margin-top: 45px;
+        left: 20px;
+    }
+
+/* ==========================================================================
+   Slide 2
+   ========================================================================== */
 #slide-2 .bcg {background-color: #000000}
 #slide-2 .hsContent {
 }
@@ -205,7 +294,7 @@ main {
         color: #ffffff;
         top: auto;
         font: 100px "Arimo", sans-serif;
-        line-height: 115px;
+        line-height: 105px;
         font-weight: normal;
         margin: 2%;
         vertical-align: bottom;
@@ -224,7 +313,7 @@ main {
 
     #slide-2 h2 {
         color: #000000;
-        font: 14px "Arimo", sans-serif;
+        font: 16px "Arimo", sans-serif;
         font-weight: bold;
         text-transform: uppercase;
         padding-bottom: 5px;
@@ -250,7 +339,7 @@ main {
     .left-half {
         background-color: #000000;
         float: left;
-        width: 35%;
+        width: 38%;
     }
 
     #slide-2 .title { 
@@ -263,7 +352,7 @@ main {
     .right-half {
         background-color: #ffffff;
         float: left;
-        width: 65%;
+        width: 62%;
     }
 
     .inner {
@@ -273,12 +362,12 @@ main {
         margin: 10px auto;
         padding: 0px 10px 40px 10px;
         text-align: left;
-        position: relative;
         z-index: 100;
+        top: 20px;
     }
 
     #slide-2 .inner article { 
-        height: 95%;
+        height: 90%;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
         -webkit-column-count: 2;
@@ -295,7 +384,9 @@ main {
     }
 
 
-/* Slide 3 */
+/* ==========================================================================
+   Slide 3
+   ========================================================================== */
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
 #slide-3 .hsContent {
 }
@@ -305,7 +396,7 @@ main {
         color: #ffffff;
         padding-top: 30px;
         font: 100px "Arimo", sans-serif;
-        line-height: 115px;
+        line-height: 90px;
         font-weight: normal;
         margin: 2%;
     }
@@ -328,15 +419,10 @@ main {
         padding-top: 225px;
     }
 
-    #slide-3 .quote{
-        width: 50%;
-        position: center;
-        color: #ffffff;
-        font: 14px "Arimo", sans-serif;
-    }
 
-
-/* Slide 4 */
+/* ==========================================================================
+   Slide 4
+   ========================================================================== */
 #slide-4 .bcg {background-color: #ffffff}
 #slide-4 .hsContent {
 }
@@ -344,7 +430,7 @@ main {
         color: #000000;
         top: auto;
         font: 100px "Arimo", sans-serif;
-        line-height: 115px;
+        line-height: 90px;
         font-weight: normal;
         margin: 2%;
         vertical-align: bottom;
