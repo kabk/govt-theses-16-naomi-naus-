@@ -15,10 +15,7 @@
 	$slide = $('.homeSlide');
 	$body = $('body');
 	
-    //FadeIn all sections   
-
-		      
-		      // Resize sections
+ 		      // Resize sections
 		      adjustWindow();
 		      
 		      // Fade in sections
