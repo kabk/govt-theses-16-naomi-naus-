@@ -614,14 +614,6 @@ main {
    Modify as content requires.
    ========================================================================== */
 
-@media (max-width: 767px, min-height:400px) {
-  article {
-    -webkit-columns: 2 350px;
-       -moz-columns: 2 350px;
-            columns: 2 350px;
-  }
-}
-
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
