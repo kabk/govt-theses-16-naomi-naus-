@@ -1,9 +1,151 @@
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Base styles: opinionated defaults
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
-    /* Style adjustments for viewports that meet the condition */
+html,
+button,
+input,
+select,
+textarea {
+    color: #000000;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    width: 100%;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+ul.a {list-style-type: circle;}
+
+
+.hsContainer {
+	width: 100%;
+	position: relative;
+}
+
+.hsContent {
+	max-width: 100%;
+	position: absolute;
+}
+	.hsContent h1  {
+		color: #000000;
+		padding: 10px 10px;
+		margin-bottom: 15px;
+	}
+	.hsContent p {
+		color: #000000;
+        padding: 10px 10px;
+        margin-bottom: 0px;
+	}
+    .hsContent p + p {
+        text-indent: 1.5em;
+        margin-top: 20px; 
+    }
+	.hsContent a {
+		color: #000000;
+		text-decoration: underline;
+	}
+
+/* ==========================================================================
+   Navigatie
+   ========================================================================== */
+
+#menubar {
+    left: 0px;
+    position: fixed;
+    top: 0;
+    height: 45px;
+    z-index: 70;
+    width: 100%;
+    background: #008aff;
+}
+
+
+#menubar ul {
+    list-style-type: none;
+    position: fixed;
+    right: 83px;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+#menubar li{
+    list-style-type: none;
+    padding: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Lay-out
+   ========================================================================== */
+
+#hsContent .title{
+
+}
+
+#hsContent .sub-title{
+	
+}
+
+#hsContent .inner{
+	
+}
+
+/* ==========================================================================
+   Footnotes
+   ========================================================================== */
+
+.footnote-ref {
+    color: #000000;
+}
+
+.footnotes {
+    height: auto;
+}
+
+.footnotes ol {
+    text-transform: uppercase;
+}  
+
+.note {
+    font: 10px "Arimo", sans-serif;
+    font-weight: bold;
+}
+
+.footnotes hr {
+    display: none;
 }
