@@ -198,7 +198,7 @@ hr {
  */
 
 mark {
-    background: #ff0;
+    background: #fff00f;
     color: #000;
 }
 
@@ -275,6 +275,7 @@ sup {
 
 sup {
     top: -0.5em;
+        padding: 1px;
 }
 
 sub {

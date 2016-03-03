@@ -114,9 +114,7 @@ body, html {
 	min-height: 100%;
 	background-color: #000000;
 }
-section, div {
-    height: 100%;
-}
+
 .no-js {
 	padding-top: 106px;
 }
@@ -140,10 +138,14 @@ section {
 	-webkit-transition: opacity 300ms ease-out;
 	-moz-transition: opacity 300ms ease-out;
 	transition: opacity 300ms ease-out;
+
 }
+
 main {
 	overflow-x: hidden;
+    height: 100%;
 }
+
 #preload {
 	width: 1px;
 	height: 1px;
@@ -157,20 +159,20 @@ main {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	height: 100%;
+/*	height: 100%;*/
 	width: 100%;
 }
 
 .hsContainer {
 	width: 100%;
-	height: 100%;
+    height: 100%;
 	overflow: hidden;
 	position: relative;
 }
 
 .hsContent {
 	max-width: 100%;
-	position: absolute;
+	/*position: absolute;*/
 }
 	.hsContent h1  {
 		color: #000000;
@@ -205,12 +207,15 @@ main {
 }
 
 .footnotes ol {
-    text-transform: uppercase;
+
 }  
 
 .note {
     font: 10px "Arimo", sans-serif;
+    line-height: 10px;
     font-weight: bold;
+    margin-bottom: 10px;
+    color: #a7a9ac;
 }
 
 .footnotes hr {
@@ -255,23 +260,18 @@ main {
 /* ==========================================================================
    Slide 1
    ========================================================================== */
-#slide-1 .bcg {background-color: #ffffff}
-#slide-1 .hsContent {
-    top: 45px;
-    font: 16px "Arimo", sans-serif;
-    line-height: 30px;
-    font-weight: normal;
-    margin: 2%;
+#slide-1 .bcg {
+    background-color: #ffffff;
+    height: 100%;
 }
-
+#slide-1 .hsContent {
+    height: 100%;
+}
 
     #slide-1 .title {
         color: #000000;
-        width: 600px;
-        height: auto;
-        position: relative;
-        top: 23%;
-        left: 20px;
+        margin-top: 20%;
+        margin-left: 40px;
         font: 100px "Arimo", sans-serif;
         line-height: 105px;
     }
@@ -281,15 +281,89 @@ main {
         line-height: 20px;
         font-weight: normal;
         margin-top: 45px;
-        left: 20px;
+        left: 40px;
     }
 
 /* ==========================================================================
    Slide 2
    ========================================================================== */
-#slide-2 .bcg {background-color: #000000}
-#slide-2 .hsContent {
+#slide-2 .bcg {
+    background-color: #000000;
+    height: 100%;
 }
+#slide-2 .hsContent {
+    height: 100%;
+}
+
+    .left-half {
+        background-color: #000000;
+        float: left;
+        width: 38%;
+        height: 100%;
+    }
+
+    .right-half {
+        background-color: #ffffff;
+        float: right;
+        width: 62%;
+        height: 100%;
+    }
+
+    #slide-2 .title {
+        color: #ffffff;
+        width: 600px;
+        height: auto;
+        position: relative;
+        margin: none;
+        top: 40%;
+        left: 40px;
+        font: 100px "Arimo", sans-serif;
+        line-height: 105px;
+        z-index: 0;
+    }
+
+    #slide-2 .inner {
+        display: block;
+        min-width: 300px;
+        margin: 0 auto;
+        padding: 0px 10px 40px 10px;
+        width: 85%;
+        position: relative;
+        top: 10%;
+        z-index: 1;
+    }
+
+    #slide-2 .inner article { 
+        height: 800px;
+        column-fill: auto;
+        margin: 0px 0px 0px 0px;
+        -webkit-column-count: 2;
+        -moz-column-count:2;
+        column-count: 2;
+        -webkit-column-width: 300px;
+        -moz-column-width:300px;
+        column-width: 300px;
+        -webkit-column-gap: 4em;
+        -moz-column-gap: 4em;
+        -column-gap: 4em;
+        -webkit-column-rule: 1px outset #ddd;
+        -moz-column-rule: 1px outset #ddd;
+        column-rule: 1px outset #ddd;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-bottom: 15px;
+    }
+
+
+
+    #slide-2 * {
+      box-sizing: border-box;
+    }
+
+    #slide-2 section {
+        width: 100%;
+    }
+
     #slide-2 h1 {
         color: #ffffff;
         top: auto;
@@ -318,115 +392,88 @@ main {
         padding-bottom: 5px;
     }
 
-    #slide-2 * {
-      box-sizing: border-box;
-    }
 
-    #slide-2 section {
+/* ==========================================================================
+   Slide 3
+   ========================================================================== */
+#slide-3 .bcg {
+    background-color: #ffffff;
+    height: 100%;
+    /*background-image:url('../img/bcg_slide-3.jpg')*/
+}
+
+#slide-3 .hsContent {
+    height: 100%;
+  }
+
+  #slide-3 .container {
+    background-color: #fff00f;
+    height: 210px;
+    width: 100%;
+    position: absolute;
+  }
+
+    #slide-3 h1 {
         width: 100%;
-      }
-
-    #slide-2 article {
+        color: #000000;
+        padding-top: 30px;
+        font: 100px "Arimo", sans-serif;
+        line-height: 90px;
+        font-weight: normal;
+        margin-top: 3%;
         position: relative;
-        top: 50%;
-        left: 50%;
-        padding: 1rem;
-        text-align: left;
-        transform: translate(-50%, -50%);
-      }
-
-    .left-half {
-        background-color: #000000;
-        float: left;
-        width: 38%;
+        left: 40px;
+    }
+    #slide-3 .inner{
+        width: 95%;
+        position: relative;
+        top: 240px;
+        left: 40px;
     }
 
-    #slide-2 .title { 
-        position: absolute;
-        left: 10px;
-        top: 0px;
-        max-width: 35%;
-    }
-
-    .right-half {
-        background-color: #ffffff;
-        float: right;
-        width: 62%;
-    }
-
-    .inner {
-        display: block;
-        width: 90%;
-        min-width: 300px;
-        margin: 10px auto;
-        padding: 0px 10px 40px 10px;
-        text-align: left;
-        z-index: 100;
-        top: 20px;
-    }
-
-    #slide-2 .inner article { 
-        height: 90%;
+    #slide-3 .inner article{
+        height: 650px;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
-        -webkit-column-count: 2;
-        -moz-column-count:2;
-        column-count: 2;
+        -webkit-column-count: 3;
+        -moz-column-count:3;
+        column-count: 3;
         -webkit-column-width: 300px;
         -moz-column-width:300px;
         column-width: 300px;
-        -webkit-column-gap: 4em;
-        -moz-column-gap: 4em;
-        -column-gap: 4em;
+        -webkit-column-gap: 6em;
+        -moz-column-gap: 6em;
+        -column-gap: 6em;
         -webkit-column-rule: 1px outset #ddd;
         -moz-column-rule: 1px outset #ddd;
         column-rule: 1px outset #ddd;
         overflow-y: hidden;
         overflow-x: scroll;
-    }
+        padding-bottom: 20px;
 
-
-/* ==========================================================================
-   Slide 3
-   ========================================================================== */
-#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
-#slide-3 .hsContent {
-    height: auto;
-}
-
-    #slide-3 h1 {
-        width: 100%;
-        color: #ffffff;
-        padding-top: 30px;
-        font: 100px "Arimo", sans-serif;
-        line-height: 90px;
-        font-weight: normal;
-        margin: 2%;
     }
 
     #slide-3 h2 {
-        color: #ffffff;
-        font: 28px "Arimo", sans-serif;
+        color: #000000;
+        font: 16px "Arimo", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
         padding-bottom: 5px;
-        line-height: 42px;
+    }
+
+    #slide-3 h3 {
+        color: #000000;
+        font: 18px "Arimo", sans-serif;
+        line-height: 29px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
     }
 
     #slide-3 p {
-        color: #ffffff;
         font: 14px "Arimo", sans-serif;
+        line-height: 24px;
         padding: 0px 0px;
-    }
-
-    #slide-3 .inner{
-        width: 86%;
-        position: center;
-        padding-top: 10px;
-    }
-
-    #slide-3 .quote {
-        width: 50%;
-        padding: 0px 0px;
-        position: center;
     }
 
 
@@ -446,6 +493,40 @@ main {
         vertical-align: bottom;
     }
 
+    #slide-4 h2 {
+        color: #000000;
+        font: 18px "Arimo", sans-serif;
+        line-height: 32px;
+        font-weight: normal;
+        padding-bottom: 5px;
+        line-height: 30px;
+    }
+
+    #slide-4 p {
+        color: #000000;
+        font: 14px "Arimo", sans-serif;
+        padding: 0px 0px;
+    }
+
+    #slide-4 .inner{
+        display: block;
+        width: 400px;
+        margin: 10px auto;
+        padding: 0px 10px 40px 10px;
+        text-align: left;
+        z-index: 1;
+        position: relative;
+        top: 80px;
+    }
+
+    #slide-4 .inner article{
+
+
+    }
+
+    #slide-4 .quote {
+    }
+
     #slide-4 p {
         font: 14px "Arimo", sans-serif;
         line-height: 24px;
@@ -460,15 +541,31 @@ main {
         padding-bottom: 5px;
     }
 
-    #slide-4 * {
+/* ==========================================================================
+   Slide 5
+   ========================================================================== */
+#slide-5 .bcg {background-color: #ffffff}
+#slide-5 .hsContent {
+}
+       #slide-5 h1 {
+        color: #000000;
+        top: auto;
+        font: 100px "Arimo", sans-serif;
+        line-height: 90px;
+        font-weight: normal;
+        margin: 2%;
+        vertical-align: bottom;
+    }
+
+    #slide-5 * {
       box-sizing: border-box;
     }
 
-    #slide-4 section {
+    #slide-5 section {
         width: 100%;
       }
 
-    #slide-4 article {
+    #slide-5 article {
         position: relative;
         top: 50%;
         left: 50%;
@@ -477,13 +574,13 @@ main {
         transform: translate(-50%, -50%);
       }
 
-    #slide-4 .left-half {
+    #slide-5 .left-half {
         background-color: #ffffff;
         float: left;
         width: 100%;
     }
 
-    #slide-4 .inner {
+    #slide-5 .inner {
         display: block;
         width: 90%;
         min-width: 300px;
@@ -494,7 +591,7 @@ main {
         z-index: 100;
     }
 
-    #slide-4 .inner article { 
+    #slide-5 .inner article { 
         height: 95%;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
@@ -620,6 +717,65 @@ main {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width: 300px) and (max-width: 750px) {   
+        body, html {
+    }
+
+    #menubar{
+    display: none;
+    }
+
+    #slide-1 .title{
+    width: 90%;
+    height: 50%;
+    font: 55px "Arimo", sans-serif;
+    line-height: 60px;
+            left: 25px;
+    }
+
+    #slide-2 .left-half {
+    display:none;
+    }
+
+    #slide-2 .right-half {
+    float: none;
+        width: 100%;
+    }
+
+    #slide-2 .inner article { 
+        height: 800px;
+        column-fill: auto;
+        margin: 0px 0px 0px 0px;
+        -webkit-column-count: 2;
+        -moz-column-count:2;
+        column-count: 2;
+        -webkit-column-width: 300px;
+        -moz-column-width:300px;
+        column-width: 300px;
+        -webkit-column-gap: 4em;
+        -moz-column-gap: 4em;
+        -column-gap: 4em;
+        -webkit-column-rule: 1px outset #ddd;
+        -moz-column-rule: 1px outset #ddd;
+        column-rule: 1px outset #ddd;
+    }
+
+    #slide-3 .hsContent {
+    height: 200px;
+    }
+
+    #slide-3 h1 {
+        width: 90%;
+        color: #000000;
+        padding-top: 30px;
+        font: 55px "Arimo", sans-serif;
+        line-height: 60px;
+        font-weight: normal;
+        margin-top: 4%;
+        left: 25px;
+        position: relative;
+    }
+
 
 
 @media print,
