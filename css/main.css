@@ -275,8 +275,8 @@ main {
         color: #000000;
         margin-top: 20%;
         margin-left: 40px;
-        font: 100px "Arimo", sans-serif;
-        line-height: 105px;
+        font: 115px "Arimo", sans-serif;
+        line-height: 120px;
     }
 
     #slide-1 .title h2{
@@ -320,8 +320,8 @@ main {
         margin: none;
         top: 40%;
         left: 40px;
-        font: 100px "Arimo", sans-serif;
-        line-height: 105px;
+        font: 90px "Arimo", sans-serif;
+        line-height: 95px;
         z-index: 0;
     }
 
@@ -333,7 +333,7 @@ main {
         padding: 0px 10px 40px 10px;
         width: 85%;
         position: relative;
-        top: 10%;
+        top: 11%;
         z-index: 1;
     }
 
@@ -419,7 +419,7 @@ main {
         width: 100%;
         color: #000000;
         padding-top: 30px;
-        font: 100px "Arimo", sans-serif;
+        font: 90px "Arimo", sans-serif;
         line-height: 90px;
         font-weight: normal;
         margin-top: 3%;
@@ -508,7 +508,7 @@ main {
         width: 100%;
         color: #000000;
         padding-top: 30px;
-        font: 100px "Arimo", sans-serif;
+        font: 90px "Arimo", sans-serif;
         line-height: 90px;
         font-weight: normal;
         margin-top: 3%;
@@ -607,7 +607,7 @@ main {
         margin: none;
         top: 40%;
         left: 40px;
-        font: 100px "Arimo", sans-serif;
+        font: 90px "Arimo", sans-serif;
         line-height: 105px;
         z-index: 0;
     }
