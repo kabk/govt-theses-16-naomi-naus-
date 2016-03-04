@@ -323,6 +323,7 @@ main {
     }
 
     #slide-2 .inner {
+        height: 1000px;
         display: block;
         min-width: 300px;
         margin: 0 auto;
@@ -334,7 +335,7 @@ main {
     }
 
     #slide-2 .inner article { 
-        height: 800px;
+        height: 85%;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
         -webkit-column-count: 2;
@@ -353,8 +354,6 @@ main {
         overflow-x: scroll;
         padding-bottom: 15px;
     }
-
-
 
     #slide-2 * {
       box-sizing: border-box;
@@ -425,14 +424,15 @@ main {
         left: 40px;
     }
     #slide-3 .inner{
+        height: 700px;
         width: 95%;
         position: relative;
-        top: 250px;
+        top: 260px;
         left: 40px;
     }
 
     #slide-3 .inner article{
-        height: 600px;
+        height: 85%;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
         -webkit-column-count: 3;
@@ -598,9 +598,9 @@ main {
         -webkit-column-count: 3;
         -moz-column-count:3;
         column-count: 3;
-        -webkit-column-width: 400px;
-        -moz-column-width:400px;
-        column-width: 400px;
+        -webkit-column-width: 300px;
+        -moz-column-width:300px;
+        column-width: 300px;
         -webkit-column-gap: 5em;
         -moz-column-gap: 5em;
         -column-gap: 5em;
@@ -717,7 +717,58 @@ main {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width: 300px) and (max-width: 750px) {   
+/*@media screen and (min-width: 775px) and (max-width: 1000px) {   
+        body, html {
+    }
+
+    #slide-2 .title {
+        color: #ffffff;
+        width: 200px;
+        height: auto;
+        position: relative;
+        margin: none;
+        top: 40%;
+        left: 40px;
+        font: 75px "Arimo", sans-serif;
+        line-height: 105px;
+        z-index: 0;
+    }
+
+    #slide-3 h1 {
+        width: 90%;
+        color: #000000;
+        padding-top: 30px;
+        font: 75px "Arimo", sans-serif;
+        line-height: 75px;
+        font-weight: normal;
+        margin-top: 1%;
+        left: 25px;
+        position: relative;
+    }
+
+    #slide-3 .inner article{
+        height: 600px;
+        column-fill: auto;
+        margin: 0px 0px 0px 0px;
+        -webkit-column-count: 3;
+        -moz-column-count:3;
+        column-count: 3;
+        -webkit-column-width: 300px;
+        -moz-column-width:300px;
+        column-width: 300px;
+        -webkit-column-gap: 6em;
+        -moz-column-gap: 6em;
+        -column-gap: 6em;
+        -webkit-column-rule: 1px outset #ddd;
+        -moz-column-rule: 1px outset #ddd;
+        column-rule: 1px outset #ddd;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+
+    }*/
+
+@media screen and (min-width: 300px) and (max-width: 800px) {   
         body, html {
     }
 
@@ -774,8 +825,29 @@ main {
         margin-top: 4%;
         left: 25px;
         position: relative;
-    }
+        }
+        
+        #slide-3 .inner article{
+        height: 600px;
+        column-fill: auto;
+        margin: 0px 0px 0px 0px;
+        -webkit-column-count: 3;
+        -moz-column-count:3;
+        column-count: 3;
+        -webkit-column-width: 300px;
+        -moz-column-width:300px;
+        column-width: 300px;
+        -webkit-column-gap: 6em;
+        -moz-column-gap: 6em;
+        -column-gap: 6em;
+        -webkit-column-rule: 1px outset #ddd;
+        -moz-column-rule: 1px outset #ddd;
+        column-rule: 1px outset #ddd;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding-bottom: 20px;
 
+    }
 
 
 @media print,
