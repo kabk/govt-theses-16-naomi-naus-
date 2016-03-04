@@ -694,6 +694,7 @@ main {
   }
 
   #slide-6 .container {
+    color: #000000;
      width: 100%;
     position: absolute;
   }
@@ -710,32 +711,40 @@ main {
         left: 40px;
     }
 
-    #slide-6 .inner{
-        height: 75%;
+    #slide-6 .inner2{
+        height: auto;
         width: 70%;
         position: relative;
-        top: 20%;
+        top: 15%;
+        left: 15%;
+    }
+
+    #slide-6 .inner{
+        height: 70%;
+        width: 70%;
+        position: relative;
+        top: 15%;
         left: 15%;
     }
 
     #slide-6 .inner article{
-        height: 85%;
+        height: 100%;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
-        -webkit-column-count: 3;
-        -moz-column-count:3;
-        column-count: 3;
-        -webkit-column-width: 400px;
-        -moz-column-width:400px;
-        column-width: 400px;
+        -webkit-column-count: 2;
+        -moz-column-count:2;
+        column-count: 2;
+        -webkit-column-width: 300px;
+        -moz-column-width:300px;
+        column-width: 300px;
         -webkit-column-gap: 6em;
         -moz-column-gap: 6em;
         -column-gap: 6em;
-        -webkit-column-rule: 1px outset #ddd;
-        -moz-column-rule: 1px outset #ddd;
-        column-rule: 1px outset #ddd;
+        -webkit-column-rule: 0px outset #ddd;
+        -moz-column-rule:0px outset #ddd;
+        column-rule: 0px outset #ddd;
         overflow-y: hidden;
-        overflow-x: hidden;
+        overflow-x: scroll;
         padding-bottom: 20px;
 
     }
@@ -759,7 +768,7 @@ main {
 
     #slide-6 p {
         font: 15px "Arimo", sans-serif;
-        line-height: 24px;
+        line-height: 26px;
 
         padding: 0px 0px;
 
@@ -972,7 +981,13 @@ main {
     }
 
     #slide-3 .hsContent {
-    height: 200px;
+    height: 100%;
+    }
+
+
+    #slide-3 .inner{
+        height: 75%;
+        width: 80%;
     }
 
     #slide-3 h1 {
@@ -994,9 +1009,9 @@ main {
         -webkit-column-count: 3;
         -moz-column-count:3;
         column-count: 3;
-        -webkit-column-width: 300px;
-        -moz-column-width:300px;
-        column-width: 300px;
+        -webkit-column-width: 280px;
+        -moz-column-width: 280px;
+        column-width: 280px;
         -webkit-column-gap: 6em;
         -moz-column-gap: 6em;
         -column-gap: 6em;
@@ -1008,7 +1023,35 @@ main {
         padding-bottom: 20px;
 
     }
+    #slide-4 .inner{
+        height: 75%;
+        width: 80%;
+    }
+    #slide-4 h1 {
+        width: 90%;
+        color: #000000;
+        padding-top: 30px;
+        font: 55px "Arimo", sans-serif;
+        line-height: 60px;
+        font-weight: normal;
+        margin-top: 4%;
+        left: 25px;
+        position: relative;
+        }
 
+    #slide-5 .left-half {
+        float: none;
+    width: 100%;
+    }
+
+    #slide-5 .right-half {
+    display:none;
+    }
+    #slide-6 p {
+        font: 13px "Arimo", sans-serif;
+        line-height: 24px;
+        padding: 0px 0px;
+    }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
