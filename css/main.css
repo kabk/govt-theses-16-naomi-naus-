@@ -323,7 +323,7 @@ main {
     }
 
     #slide-2 .inner {
-        height: 1000px;
+        height: 100%;
         display: block;
         min-width: 300px;
         margin: 0 auto;
@@ -424,7 +424,7 @@ main {
         left: 40px;
     }
     #slide-3 .inner{
-        height: 700px;
+        height: 75%;
         width: 95%;
         position: relative;
         top: 260px;
