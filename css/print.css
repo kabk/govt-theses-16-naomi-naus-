@@ -1,36 +1,219 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
 
-@media print {
-
-#header {display:none;}
-#content {display:none;}
-#comments {display:none;}
-#sidebar {display:none;}
-#slide-2 .left-half .right-half {display:none;}
-
-
-body, h1, h2, h3, ol, ul, div {     
-	width: auto;     
-	border: 0;     
-	margin: 0 5%;     
-	padding: 0;     
-	float: none;     
-	position: static;     
-	overflow: visible; 
+html,
+button,
+input,
+select,
+textarea {
+    color: #000000;
 }
 
-a img{
-	border: 0px;
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    width: 100%;
 }
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+ul.a {list-style-type: circle;}
+
+.hsContainer {
+	width: 95%;
+    float:left;
+}
+
+.hsContent {
+	max-width: 350px;
+	padding: 10px 10px 10px 10px;
+}
+	.hsContent h1  {
+		color: #000000;
+		padding: 10px 10px;
+		margin-bottom: 15px;
+	}
+	.hsContent p {
+		color: #000000;
+        padding: 10px 10px;
+        margin-bottom: 0px;
+	}
+    .hsContent p + p {
+        text-indent: 1.5em;
+        margin-top: 20px; 
+    }
+	.hsContent a {
+		color: #000000;
+		text-decoration: underline;
+	}
+	.hsContent h2  {
+		color: #000000;
+		padding: 10px 10px;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+    .hsContent h3  {
+        color: #000000;
+        padding: 10px 10px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+/* ==========================================================================
+   Navigatie
+   ========================================================================== */
 
 #menubar {
-	display:none;
+display:none;
+}
+
+#preload {
+    display:none;
+}
+
+/* ==========================================================================
+   Lay-out
+   ========================================================================== */
+
+.title{
+	font: 25px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.sub-title{
+	font: 20px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.inner{
+	font: 14px "Arimo", sans-serif;
+    line-height: 22px;
+}
+
+/* ==========================================================================
+   Footnotes
+   ========================================================================== */
+
+.footnote-ref {
+    color: #000000;
+}
+
+.footnotes {
+    height: auto;
+}
+
+.footnotes ol {
+
+}  
+
+.note {
+    font: 10px "Arimo", sans-serif;
+    font-weight: bold;
+}
+
+.footnotes hr {
+    display: none;
+}
+
+
+/* ==========================================================================
+   Slides
+   ========================================================================== */
+
+#slide-1 .title {
+    font: 45px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 55px;
+    margin-left: 5%;
+    margin-top: 50%;
+}
+
+#slide-1 h2 {
+    font: 16px "Arimo", sans-serif;
+    line-height: 26px;
 }
 
 #slide-2 .title {
-	top: 40px;
+    display:none;
 }
 
 #slide-2 .inner {
-	top: 40px;
+    float:left;
+    width:100%;
 }
+
+#slide-3 .container {
+    float:left;
+    width:100%;
 }
+
+#slide-3 h1 {
+    font: 35px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+    margin-top: 15%;
+}
+
+#slide-4 .container {
+    float:left;
+    width:100%;
+}
+#slide-4 h1 {
+    font: 35px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+    margin-top: 15%;
+}
+
+#slide-5 .inner {
+    float:left;
+    width:100%;
+}
+
+#slide-5 .title{
+    display:none;
+}
+
+#slide-6 .inner {
+    float:left;
+    width:100%;
+}
+
+#slide-6 h2{
+    font: 35px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+}
+    margin-top: 15%;
