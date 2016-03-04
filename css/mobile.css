@@ -50,7 +50,7 @@ textarea {
 ul.a {list-style-type: circle;}
 
 .hsContainer {
-	width: 100%;
+	width: 95%;
     float:left;
 }
 
@@ -153,7 +153,7 @@ display:none;
    ========================================================================== */
 
 #slide-1 .title {
-    font: 50px "Arimo", sans-serif;
+    font: 45px "Arimo", sans-serif;
     font-weight: bold;
     line-height: 55px;
     margin-left: 5%;
@@ -161,8 +161,8 @@ display:none;
 }
 
 #slide-1 h2 {
-    font: 18px "Arimo", sans-serif;
-    line-height: 28px;
+    font: 16px "Arimo", sans-serif;
+    line-height: 26px;
 }
 
 #slide-2 .title {
@@ -179,16 +179,41 @@ display:none;
     width:100%;
 }
 
+#slide-3 h1 {
+    font: 35px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+    margin-top: 15%;
+}
+
 #slide-4 .container {
     float:left;
     width:100%;
+}
+#slide-4 h1 {
+    font: 35px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+    margin-top: 15%;
 }
 
 #slide-5 .inner {
     float:left;
     width:100%;
 }
+
+#slide-5 .title{
+    display:none;
+}
+
 #slide-6 .inner {
     float:left;
     width:100%;
 }
+
+#slide-6 h2{
+    font: 35px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 42px;
+}
+    margin-top: 15%;
