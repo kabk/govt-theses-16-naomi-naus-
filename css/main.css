@@ -301,14 +301,14 @@ main {
     #slide-2 .left-half {
         background-color: #000000;
         float: left;
-        width: 38%;
+        width: 42%;
         height: 100%;
     }
 
     #slide-2 .right-half {
         background-color: #ffffff;
         float: right;
-        width: 62%;
+        width: 58%;
         height: 100%;
     }
 
@@ -431,7 +431,7 @@ main {
         height: 75%;
         width: 95%;
         position: relative;
-        top: 27%;
+        top: 30%;
         left: 40px;
     }
 
@@ -502,7 +502,6 @@ main {
     height: 200px;
     width: 100%;
     position: absolute;
-    top: 79%;
   }
 
     #slide-4 h1 {
@@ -512,7 +511,7 @@ main {
         font: 100px "Arimo", sans-serif;
         line-height: 90px;
         font-weight: normal;
-        margin-top: 2%;
+        margin-top: 3%;
         position: relative;
         left: 40px;
     }
@@ -521,7 +520,7 @@ main {
         height: 75%;
         width: 95%;
         position: relative;
-        top: 10%;
+        top: 30%;
         left: 40px;
     }
 
@@ -589,14 +588,14 @@ main {
     #slide-5 .left-half {
         background-color: #ffffff;
         float: left;
-        width: 62%;
+        width: 58%;
         height: 100%;
     }
 
     #slide-5 .right-half {
         background-color: #000000;
         float: right;
-        width: 38%;
+        width: 42%;
         height: 100%;
     }
 
