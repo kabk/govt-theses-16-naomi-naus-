@@ -427,20 +427,20 @@ main {
     #slide-3 .inner{
         width: 95%;
         position: relative;
-        top: 240px;
+        top: 250px;
         left: 40px;
     }
 
     #slide-3 .inner article{
-        height: 650px;
+        height: 600px;
         column-fill: auto;
         margin: 0px 0px 0px 0px;
         -webkit-column-count: 3;
         -moz-column-count:3;
         column-count: 3;
-        -webkit-column-width: 300px;
-        -moz-column-width:300px;
-        column-width: 300px;
+        -webkit-column-width: 400px;
+        -moz-column-width:400px;
+        column-width: 400px;
         -webkit-column-gap: 6em;
         -moz-column-gap: 6em;
         -column-gap: 6em;
