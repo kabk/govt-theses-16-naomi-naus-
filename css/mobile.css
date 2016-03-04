@@ -49,14 +49,13 @@ textarea {
 
 ul.a {list-style-type: circle;}
 
-
 .hsContainer {
 	width: 100%;
+    float:left;
 }
 
 .hsContent {
 	max-width: 350px;
-	position: absolute;
 	padding: 10px 10px 10px 10px;
 }
 	.hsContent h1  {
@@ -83,80 +82,25 @@ ul.a {list-style-type: circle;}
 		margin-bottom: 15px;
 		text-transform: uppercase;
 	}
+    .hsContent h3  {
+        color: #000000;
+        padding: 10px 10px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
 
 /* ==========================================================================
    Navigatie
    ========================================================================== */
 
 #menubar {
-    left: 0px;
-    position: fixed;
-    top: 0;
-    height: 45px;
-    z-index: 70;
-    width: 100%;
-    background: #008aff;
+display:none;
 }
 
-
-#menubar ul {
-	display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 10px 10px 10px;
+#preload {
+    display:none;
 }
 
-#menubar li{
-	display: inline-block;
-    padding: 8px 8px;
-    font-size: 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.nav{
-    font-family: 'Helvetica', sans-serif;
-    text-align: left;
-    font-size: 10px;
-    line-height: 10pt;
-    letter-spacing: 0.04em;
-    padding-left: 25px;
-    display: none;
-}
-
-.nav-check{
-    position: absolute;
-    top: -10em;
-}
-
-
-.nav-check:checked ~ .nav {
-    display: block;
-}
-
-.nav-label {
-    cursor: pointer;
-    width: 20px;
-    display: inline-block;
-}
-
-.nav-open,
-.nav-close {
-    display: block;
-    width: 100%;
-}
-
-.nav-close {
-    display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-open {
-    display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-    display: block;
-}
 /* ==========================================================================
    Lay-out
    ========================================================================== */
@@ -192,7 +136,7 @@ ul.a {list-style-type: circle;}
 }
 
 .footnotes ol {
-    text-transform: uppercase;
+
 }  
 
 .note {
@@ -202,4 +146,50 @@ ul.a {list-style-type: circle;}
 
 .footnotes hr {
     display: none;
+}
+
+
+/* ==========================================================================
+   Slides
+   ========================================================================== */
+
+#slide-1 .title {
+    font: 50px "Arimo", sans-serif;
+    font-weight: bold;
+    line-height: 55px;
+    margin-left: 5%;
+    margin-top: 50%;
+}
+
+#slide-1 h2 {
+    font: 18px "Arimo", sans-serif;
+    line-height: 28px;
+}
+
+#slide-2 .title {
+    display:none;
+}
+
+#slide-2 .inner {
+    float:left;
+    width:100%;
+}
+
+#slide-3 .container {
+    float:left;
+    width:100%;
+}
+
+#slide-4 .container {
+    float:left;
+    width:100%;
+}
+
+#slide-5 .inner {
+    float:left;
+    width:100%;
+}
+#slide-6 .inner {
+    float:left;
+    width:100%;
 }
