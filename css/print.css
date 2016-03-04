@@ -152,11 +152,15 @@ display:none;
 /* ==========================================================================
    Slides
    ========================================================================== */
+   .page-break{
+   	display:block;
+   	page-break-before: always;
+   	width: 100%;
+   }
 
 #slide-1 .title {
-    font: 45px "Arimo", sans-serif;
-    font-weight: bold;
-    line-height: 55px;
+    font: 100px "Arimo", sans-serif;
+    line-height: 100px;
     margin-left: 5%;
     margin-top: 50%;
 }
@@ -166,6 +170,9 @@ display:none;
     line-height: 26px;
 }
 
+#slide-2 .homeSlide{
+	 margin-top: 20%;
+}
 #slide-2 .title {
     display:none;
 }
@@ -217,4 +224,13 @@ display:none;
     font-weight: bold;
     line-height: 42px;
 }
-    margin-top: 15%;
+
+
+@media print {
+
+    .page-break{
+    display:block;
+    page-break-after: always;
+    width: 100%;
+   }
+}
